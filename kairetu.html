@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kairetu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/kairetu.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <section class="header-section">
+    <h1><i>For my Princessa</i></h1>
+    <a href="#home">Home</a>
+    <a href="#moments">Moments</a>
+    <a href="#letter">Special Letter</a>
+    <a href="#advice">My Message</a>
+    
+    <button class="gallery-button" id="privateBtn">Private Repository</button>
+    
+    <div class="pin-box" id="pinBox">
+  <div class="pin-card">
+    <p>Enter Secret PIN 🔒</p>
+    <input type="password" id="pinInput" placeholder="****">
+    <p id="pinError"></p>
+
+    <button onclick="unlockGallery()" class="btn">Open</button>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Heart -->
+  <div class="heart">
+    <img class="heart-img" src="pics/you.png" alt="Heart">
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-container">
+    <div class="hero-pics">
+      <img src="pics/WhatsApp Image 2026-02-12 at 12.43.21 PM (1).jpeg" alt="Pic 1">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.01 PM (1).jpeg" alt="Pic 2">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.01 PM.jpeg" alt="Pic 3">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.19 PM.jpeg" alt="Pic 4">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.09 PM (3).jpeg" alt="Pic 5">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.11 PM.jpeg" alt="Pic 6">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.17 PM (3).jpeg" alt="Pic 7">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.06 PM.jpeg" alt="Pic 8">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.18 PM.jpeg" alt="Pic 9">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.21 PM.jpeg" alt="Pic 10">
+
+      <!--Duplicate set-->
+      <img src="pics/WhatsApp Image 2026-02-12 at 12.43.21 PM (1).jpeg" alt="Pic 1">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.01 PM (1).jpeg" alt="Pic 2">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.01 PM.jpeg" alt="Pic 3">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.19 PM.jpeg" alt="Pic 4">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.09 PM (3).jpeg" alt="Pic 5">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.11 PM.jpeg" alt="Pic 6">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.17 PM (3).jpeg" alt="Pic 7">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.06 PM.jpeg" alt="Pic 8">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.18 PM.jpeg" alt="Pic 9">
+      <img src="pics/land/WhatsApp Image 2026-02-12 at 12.43.21 PM.jpeg" alt="Pic 10">
+    </div>
+
+    <!-- Overlay Text -->
+    <div class="hero-text">
+      <div class="hero-text-cnt"><h2><i>To Monique, my darling Moonlight</i></h2></div>
+      <div class="hero-text-cnt"><h1><i>In a world of ordinary souls, you shine with extraordinary grace</i></h1></div>
+      <div class="hero-text-cnt">
+      You bussin’, and I ain’t even joking 😏:: 
+      </div>
+      <div class="hero-text-cnt"><h2>Love is like the wind, you can't see it but you can feel it</h2></div>
+    </div>
+  </section>
+
+  <!--moments section-->
+ <section id="moments" class="video-hero">
+  <div class="video-scroller">
+     <video src="pics/video/WhatsApp Video 2026-02-12 at 12.06.04 AM.mp4" autoplay muted loop></video>
+    <video src="pics/video/WhatsApp Video 2026-02-12 at 12.04.18 AM.mp4" autoplay muted loop></video>
+    <video src="pics/video/WhatsApp Video 2026-02-12 at 12.06.06 AM.mp4" autoplay muted loop></video>
+    <video src="pics/video/WhatsApp Video 2026-02-12 at 12.04.32 AM.mp4" autoplay muted loop></video>
+   
+
+    <!-- duplicate videos for smooth loop -->
+      <video src="pics/video/WhatsApp Video 2026-02-12 at 12.06.04 AM.mp4" autoplay muted loop></video>
+    <video src="pics/video/WhatsApp Video 2026-02-12 at 12.04.18 AM.mp4" autoplay muted loop></video>
+    <video src="pics/video/WhatsApp Video 2026-02-12 at 12.06.06 AM.mp4" autoplay muted loop></video>
+    <video src="pics/video/WhatsApp Video 2026-02-12 at 12.04.32 AM.mp4" autoplay muted loop></video>
+   
+  </div>
+
+  <!-- Optional overlay text -->
+  <div class="video-text">
+    <h1>“But you know she's a rabbit you can always pull her out of a hat”</h1>
+    <p><i>~Nick wilde</i></p>
+  </div>
+</section>
+
+<!--special letter-->
+<section id="letter" class="Special-letter" id="letter">
+<h4>A special Letter For You</h4>
+
+ <div class="letter-wrapper">
+
+  <!-- PASSCODE POPUP -->
+<div class="passcode-box" id="passcodeBox">
+  <div class="passcode-content">
+    <h3>Enter Passcode 💌</h3>
+    <input type="password" id="passInput" placeholder="Secret code">
+    <button onclick="unlockLetter()">Open Letter</button>
+    <p id="errorMsg"></p>
+  </div>
+</div>
+
+
+  <div class="letter-card" onclick="this.classList.toggle('flip')">
+
+    <!-- FRONT ENVELOPE -->
+    <div class="letter-front">
+      <i class="fas fa-envelope"></i>
+      <h3>For Your Eyes Only</h3>
+      <p>Click to open</p>
+    </div>
+
+    <!-- BACK MESSAGE -->
+    <div class="letter-back">
+      <div class="letter-message-box">
+        <h2>My Letter 💌</h2>
+
+        <p>
+          I just wanna let you know that you'll always be important to me,with or without conversation. YOU are always in my mind & heart
+        </p>
+
+        <p>
+          In the most selfish way possible, i want to be the only one who has your heart, i want to me the one who understands it completely the one who holds it close, i don't want anyone else to feel your touch,i don't want anyone to kiss your lips, i want to catch the light in your eyes from the smallest things that make you happy. I want us to be in the same book. In the most selfish way possible i want you all forever.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+ <div>
+    
+    <h3>click the envelope to read my personal message to you</h3>
+  </div>
+</section>
+
+
+<!--my message-->
+<Section id="advice" class="my-message">
+<h7>My Message To You</h7>
+<h6>My dear Friend</h6>
+<h6>I created this website to remind you of how truly special you are. In a world that sometimes tries to dim your light, I want you to remember that you shine brighter than any star.</h6>
+<h6>Your beauty, both inside and out, is something that deserves to be celebrated every single day. </h6>
+<h6>Never forget how much you are loved and appreciated. On your best days and your worst days, know that you have a friend who will always be here for you, cheering you on.</h6>
+<h6>You are, and always will be, my queen.</h6>
+<h6>💖💖Love you so much💖💖</h6>
+<h5>Don't you forget that</h5>
+
+<div class="creator">Created by <span style="color: rgb(179, 3, 223);font-size: 30px;font-weight: bolder;">Isa</span></div>
+</Section>
+
+<script src="scripts/kairetu.js"></script>
+</body>
+</html>

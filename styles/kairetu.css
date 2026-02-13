@@ -1,0 +1,350 @@
+   .pin-box{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+.pin-card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+}
+
+#pinError{
+  color:red;
+  font-size:14px;
+}
+
+   html {
+      scroll-behavior: smooth;
+    }
+  body {
+      margin: 0;
+      background-color: pink;
+       background: url('WhatsApp\ Image\ 2026-02-12\ at\ 12.06.00\ AM.jpeg') no-repeat center center fixed;
+  background-size: cover;
+      font-family: Arial, sans-serif;
+      
+      
+    }
+    h1, h2 {
+      margin: 0.5em 0;
+    }
+    h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: xx-large;
+      color: rgb(235, 204, 27);
+    }
+    h4{
+      
+      font-size: xx-large;
+    }
+    h5,h7{
+      color: blueviolet;
+      font-size: medium;
+      font-weight: bold;
+      font-style: oblique;
+    }
+    h6{
+      font-size: 30px;
+    }
+
+    /* ---------------- Header ---------------- */
+    .header-section {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: gray;
+      border: 3px solid gray;
+      border-radius: 6px;
+      padding: 10px 0;
+      z-index: 100;
+    }
+    .header-section a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .gallery-button{
+      background-color: blueviolet;
+      border-radius: 13px;
+      border: none;
+      padding: 10px;
+      color: beige;
+      font-size: larger;
+      cursor: pointer;
+    }
+    /* ---------------- Heart Animation ---------------- */
+    .heart {
+      margin-top: 105px;
+      display: flex;
+      justify-content: center;
+    }
+    .heart-img {
+      height: 70px;
+      animation: beat 2s infinite;
+      transform-origin: center;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      25%, 75% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+    }
+
+    /* ---------------- Hero Section ---------------- */
+    .hero-container {
+      position: relative;
+      width: 95%;
+      height: 80vh;
+      overflow: hidden;
+      margin: 30px;
+      border: solid;
+      border-radius: 24px;
+      border-color: rgb(171, 171, 221);
+      background-color: rgb(201, 149, 201);
+      margin-top: 50px;
+      margin-bottom: 300px;
+    }
+
+    /* Moving images */
+    .hero-pics {
+      display: flex;
+      width: max-content; /* because we duplicate images for smooth loop */
+      animation: scroll 50s linear infinite;
+      
+    }
+    .hero-pics img {
+      height: 100vh;
+      object-fit: cover;
+      flex-shrink: 0;
+      margin-right: 55px;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ---------------- Text Overlay ---------------- */
+    .hero-text {
+      position: absolute;           /* stays on top of images */
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 80%;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+      backdrop-filter: blur(8px);           /* blurry effect */
+      border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     
+    }
+    .hero-text-cnt {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      
+    }
+
+    /* Responsive headings */
+    .hero-text h1, .hero-text h2 {
+      font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+
+    /*video section*/
+    .video-hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;       /* full screen */
+  overflow: hidden;
+  margin-bottom: 200px;
+  border: solid;
+  border-radius: 23px;
+  border-color: rgb(186, 131, 218);
+  padding: 40px;
+  background-color: gray;
+}
+
+/* Scrolling videos container */
+.video-scroller {
+  display: flex;
+  width: max-content;           /* allows horizontal scroll */
+  animation: scroll-left 30s linear infinite;
+}
+
+.video-scroller video {
+  height: 80vh;                /* full height of hero */
+  object-fit: cover;
+  flex-shrink: 0;               /* prevent shrinking */
+  margin-right: 10px;           /* optional spacing between videos */
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* scroll half, because videos are duplicated */
+}
+
+/* Overlay text */
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+  z-index: 10;
+}
+.Special-letter{
+  margin-top: 150px;
+  text-align: center;
+  background-image: url('pics/WhatsApp Image 2026-02-12 at 12.08.13 AM.jpeg');   /* path to your image */
+  background-size: cover;                /* scale to fill div */
+  background-repeat: no-repeat;          /* no tiling */
+  background-position: center;           /* center the image */
+}
+
+
+
+/* 3D space */
+.letter-wrapper{
+  width: 420px;      /* BIGGER ENVELOPE */
+  height: 280px;
+  perspective: 1000px;
+  margin: 80px auto;
+}
+
+/* Card that flips */
+.letter-card{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  cursor: pointer;
+}
+
+.letter-card.flip{
+  transform: rotateY(180deg);
+}
+
+/* Front & back shared styles */
+.letter-front,
+.letter-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* FRONT ENVELOPE DESIGN */
+.letter-front{
+  background: pink;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Make envelope icon BIG */
+.letter-front i{
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+/* BACK SIDE */
+.letter-back{
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+
+/* SCROLLABLE MESSAGE BOX */
+.letter-message-box{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;      /* 🔥 enables scrolling */
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2);
+  color: white;
+}
+.passcode-box{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.6);
+  display:none;              /* hidden by default */
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.passcode-content{
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  color:white;
+}
+
+.passcode-content input{
+  padding:10px;
+  margin:10px 0;
+  border-radius:6px;
+  border:none;
+}
+
+.passcode-content button{
+  padding:10px 20px;
+  border:none;
+  border-radius:6px;
+  background:pink;
+  cursor:pointer;
+}
+
+.my-message{
+  text-align: center;
+  padding: 250px;
+  border: solid;
+  background-color: beige;
+  border-color: beige;
+  padding-top: 50px;
+  margin-top: 100px;
+  
+}
+.creator{
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  font-size: larger;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Memories App</title>
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<link rel="stylesheet" href="styles/gallery.css">
+</head>
+
+<body>
+
+<header>✨ My Memories</header>
+
+<!-- ENVELOPE -->
+<div class="envelope" onclick="openMessage()">
+    <i class="fas fa-envelope"></i>
+    <h3>For Your Eyes Only</h3>
+    <p>Click to open</p>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+<!-- IMAGE -->
+<div class="card" onclick="openViewer('image','pics/photo1.jpg')">
+<img src="pics/WhatsApp Image 2026-02-12 at 12.06.00 AM.jpeg">
+</div>
+
+<div class="card" onclick="openViewer('image','pics/photo2.jpg')">
+<img src="pics/WhatsApp Image 2026-02-12 at 12.08.13 AM.jpeg">
+</div>
+
+<div class="card" onclick="openViewer('video','pics/WhatsApp Video 2026-02-12 at 12.42.01 PM.mp4')">
+<video src="pics/WhatsApp Video 2026-02-12 at 12.42.01 PM.mp4"></video>
+</div>
+
+<div class="card" onclick="openViewer('image','pics/photo3.jpg')">
+<img src="pics/WhatsApp Image 2026-02-12 at 12.36.53 PM (1).jpeg">
+</div>
+
+<!-- 👉 COPY MORE CARDS HERE FOR 20+ FILES -->
+
+</div>
+
+<!-- VIEWER MODAL -->
+<div class="modal" id="viewer">
+<span class="close" onclick="closeViewer()">&times;</span>
+<div class="modal-content" id="viewerContent"></div>
+</div>
+
+<!-- MESSAGE MODAL -->
+<div class="modal" id="messageModal">
+<span class="close" onclick="closeMessage()">&times;</span>
+
+<div class="message-box">
+<h2>❤️ My Letter</h2>
+
+<p>
+Write your long message here...  
+This box scrolls automatically if your text becomes very long.
+You can paste poems, love letters, memories or anything you want.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Add as many paragraphs as you want — it will stay inside the
+scrollable container instead of filling the whole screen.
+</p>
+
+</div>
+</div>
+
+<script src="scripts/gallery.js"></script>
+
+</body>
+</html>

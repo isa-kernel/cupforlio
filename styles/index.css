@@ -1,0 +1,59 @@
+/* Center the whole page */
+body{
+  background-color:darkgray;
+  background-color: pink;
+       background: url('WhatsApp\ Image\ 2026-02-13\ at\ 7.34.03\ PM.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;  /* full screen height */
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  font-family: Arial, sans-serif;
+}
+p{
+  font-weight: bold;
+  font-size: xx-large;
+  color: rgb(211, 69, 69);
+}
+
+/* Card container */
+.card-container{
+  padding: 30px;
+  height: 170px;
+  width: 290px;
+  border: 3px solid #535353;
+  border-radius: 10px;
+  text-align: center;       /* centers text + buttons */
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;      /* center items horizontally */
+  gap: 10px;                /* space between items */
+  background-color: rgb(154, 174, 190);
+}
+.btn{
+  font-size:x-large;
+  background-color: rgb(165, 100, 226);
+  border: none;
+  border-radius: 9px;
+  color: aliceblue;
+}
+
+.js-sticker-display{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.popup-sticker{
+  max-width:120px;
+  height:auto;
+}
+
+.retry-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
